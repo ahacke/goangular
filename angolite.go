@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	applicationName  string = "goangular"
+	applicationName  string = "angolite"
 	databaseFileName string = applicationName + ".db"
 )
 
