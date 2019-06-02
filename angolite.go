@@ -24,7 +24,7 @@ type entryStruct struct {
 func main() {
 	initializeDatabase()
 
-	http.Handle("/", http.FileServer(rice.MustFindBox("angular-app").HTTPBox()))
+	http.Handle("/", http.FileServer(rice.MustFindBox("app").HTTPBox()))
 
 	http.HandleFunc("/api/hello", helloWorld)
 	http.HandleFunc("/api/entry", postEntry)
